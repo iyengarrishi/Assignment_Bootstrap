@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Using Bootstrap</title>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		
+		<!-- Custom stylesheet -->
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<body>
+		<h1>The Avengers</h1>
+		
+		<!-- Adding a dropdown menu using a button group -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    More Details <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="http://www.imdb.com/title/tt2395427/">IMDb</a></li>
+    <li class="divider"></li>
+    <li><a href="http://en.wikipedia.org/wiki/Avengers_(comics)">Wikipedia</a></li>
+  </ul>
+</div>
+<!--Add a modal video using a button-->
+<button type="button" class="btn btn-success trailer">Trailer</button>
+
+	<div class= "container">
+	  <div class="row">
+		<div class= "text-div col-md-3 col-sm-6 hidden-xs">
+			<h3>Iron Man</h3>
+			<p>An American billionaire playboy, industrialist, and ingenious engineer, Tony Stark suffers a severe chest injury during a kidnapping in which his captors attempt to force him to build a weapon of mass destruction. 
+				He instead creates a powered suit of armor to save his life and escape captivity. He later uses the suit and successive versions to protect the world as Iron Man.</p>
+		</div>
+		<div class= "image-div col-md-9 col-sm-6">
+			<img src="style.jpg" class="img-responsive"/>
+		</div>
+	   </div> <!--row ends here-->
+		
+	   <div class="row">	
+		<div class= "text-div col-md-3 col-sm-6 hidden-xs">
+			<h3>The Incredible Hulk</h3>
+			<p>Hulk is the alter ego of Bruce Banner, a socially withdrawn and emotionally reserved physicist who physically transforms into the Hulk 
+				under emotional stress and other specific circumstances at will or against it; 
+				these involuntary transformations lead to many complications in Banner's life.</p>
+		</div>
+		<div class= "image-div col-md-9 col-sm-6">
+			<img src="hulk.jpg" class="img-responsive"/>
+		</div>
+	   </div> <!--row ends here-->
+	   
+	   <div class="row">	
+		<div class= "text-div col-md-3 col-sm-6 hidden-xs">
+			<h3>Thor</h3>
+			<p>Thor, the crown prince of Asgard, is exiled from his homeland to Earth. While there, he forms a relationship with Jane Foster, a scientist. 
+				However, Thor must stop his adopted brother Loki, who intends to become the new king of Asgard.</p>
+		</div>
+		<div class= "image-div col-md-9 col-sm-6">
+			<img src="thor.jpg" class="img-responsive"/>
+		</div>
+	   </div> <!--row ends here-->
+	   	
+	   <div class="row">	
+		<div class= "text-div col-md-3 col-sm-6 hidden-xs">
+			<h3>Captain America</h3>
+			<p>Captain America has been the alter ego of Steve Rogers, a frail young man who was enhanced to the peak of human perfection by an experimental serum, 
+				in order to aid the United States government's imminent efforts in World War II. Captain America wears a costume that bears an American flag motif, 
+				and is armed with a nearly indestructible shield that can be used for defense and can also be thrown as a weapon.</p>
+		</div>
+		<div class= "image-div col-md-9 col-sm-6">
+			<img src="captainamerica.jpg" class="img-responsive"/>
+		</div>
+	   </div> <!--row ends here-->
+	   	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		
+		<!-- Custom script file -->
+		<script src="script.js" type="text/javascript"></script>
+	</div> <!--container ends here-->
+
+	<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+		      </div>
+		      <div class="modal-body">
+		        <!-- video markup will go here -->
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</body>
+</html>
+
